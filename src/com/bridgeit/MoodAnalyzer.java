@@ -9,6 +9,7 @@ public class MoodAnalyzer {
 		if(message.toLowerCase().contains("sad")) {
 			return first_mood;
 		}else {
+			
 			return second_mood;
 		}
 	}
