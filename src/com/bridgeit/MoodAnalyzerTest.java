@@ -15,17 +15,18 @@ public class MoodAnalyzerTest {
 	public static void init() {
 		analyser = new MoodAnalyzer();
 	}
-	//Test case refactor1.1
+	
 	@Test
-	public void testMessageToReturnSad() {
-		String result = analyser.analyseMood(message1);
+	public void test_message_to_return_sad_after_refactor() {
+		analyser = new MoodAnalyzer(message1);
+		String result = analyser.analyseMood();
 		assertEquals(MoodAnalyzer.first_mood, result);
 	}
-	//Test case refactor1.2
+	
 	@Test
-	public void testMessageToReturnHappy() {
-		String result = analyser.analyseMood(message2);
+	public void test_message_to_return_happy_after_refactor() {
+		analyser = new MoodAnalyzer(message2);
+		String result = analyser.analyseMood();
 		assertEquals(MoodAnalyzer.second_mood, result);
 	}
-	
 }

@@ -5,7 +5,7 @@ public class MoodAnalyzerMain {
 	public static void main(String[] args) {
 		
 		MoodAnalyzer analyser = new MoodAnalyzer();
-		System.out.println(analyser.analyseMood("i am good"));
+		System.out.println(analyser.analyseMood());
 	}
 
 }
