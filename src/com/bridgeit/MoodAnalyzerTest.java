@@ -8,7 +8,7 @@ import org.junit.Test;
 public class MoodAnalyzerTest {
 
 	public static MoodAnalyzer analyser;
-	public String message = "i am in Sad Mood";
+	public String message = "i am in sad Mood";
 	
 	@BeforeClass
 	public static void init() {
@@ -16,9 +16,14 @@ public class MoodAnalyzerTest {
 	}
 	
 	@Test
-	public void test_message_to_return_sad() {
+	public void testMessageToReturnSad() {
 		String result = analyser.analyseMood(message);
 		assertEquals(MoodAnalyzer.first_mood, result);
+	}
+	@Test
+	public void testMessageToReturnHappy() {
+		String result = analyser.analyseMood(message);
+		assertEquals(MoodAnalyzer.second_mood, result);
 	}
 	
 }
