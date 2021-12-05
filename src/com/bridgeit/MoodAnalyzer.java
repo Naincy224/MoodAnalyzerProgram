@@ -21,8 +21,8 @@ public class MoodAnalyzer {
 			return second_mood;
 		}
 		} catch(Exception ex){
-			System.out.println(ex);
-		}
+			
 		return "Empty String";
 	}
+}
 }
